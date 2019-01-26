@@ -56,7 +56,7 @@ SELECT AVG(age) FROM student;
 
 DELETE FROM student WHERE ID = 9;
 
-SELECT COUNT(student_id), course_code FROM takes GROUP BY student_id;
+SELECT COUNT(student_id), course_code FROM takes GROUP BY course_code;
 
 SELECT course.code, course.course_name, teacher.fname, teacher.lname FROM course 
 JOIN teacher ON course.instructor = teacher.ID;  
